@@ -1,0 +1,31 @@
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "random dude",
+  "email": "rdude@example.com",
+  "password": "tryguessdis",
+  "password_confirmation": "tryguessdis"
+}
+
+###
+
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "rdude@example.com",
+  "password": "tryguessdis"
+}
+
+### create dog
+
+POST http://localhost:3000/dogs.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUwMTc1Mjl9.9OodIU2bnsCo54Ri9jZlOGp1SabmlF56CnRynFsRsKY
+Content-Type: application/json
+
+{
+  "name": "Buddy",
+  "age": 13,
+  "breed": "Black Labrador Retriever"
+}
